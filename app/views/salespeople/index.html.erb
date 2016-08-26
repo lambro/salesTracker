@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Salespeople</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Contact</th>
+      <th>Target</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @salespeople.each do |salesperson| %>
+      <tr>
+        <td><%= salesperson.name %></td>
+        <td><%= salesperson.contact %></td>
+        <td><%= salesperson.target %></td>
+        <td><%= salesperson.image %></td>
+        <td><%= link_to 'Show', salesperson %></td>
+        <td><%= link_to 'Edit', edit_salesperson_path(salesperson) %></td>
+        <td><%= link_to 'Destroy', salesperson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Salesperson', new_salesperson_path %>

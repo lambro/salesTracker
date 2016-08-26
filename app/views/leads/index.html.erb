@@ -1,0 +1,41 @@
+ <%# app/views/records/index.html.erb %>
+
+<%= react_component 'Leads', { data: @leads } %>
+
+<!-- <p id="notice"><%#= notice %></p>
+
+<h1>Listing Leads</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Contact</th>
+      <th>Source</th>
+      <th>Date</th>
+      <th>Description</th>
+      <th>Active</th>
+      <th>Salesperson</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%# @leads.each do |lead| %>
+      <tr>
+        <td><%#= lead.contact %></td>
+        <td><%#= lead.source %></td>
+        <td><%#= lead.date %></td>
+        <td><%#= lead.description %></td>
+        <td><%#= lead.active %></td>
+        <td><%#= lead.salesperson_id %></td>
+        <td><%#= link_to 'Show', lead %></td>
+        <td><%#= link_to 'Edit', edit_lead_path(lead) %></td>
+        <td><%#= link_to 'Destroy', lead, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <%# end %>
+  </tbody>
+</table>
+
+<br>
+
+<%#= link_to 'New Lead', new_lead_path %> -->

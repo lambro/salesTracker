@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contact: MyText
+  source: MyText
+  date: 2016-08-25
+  description: MyText
+  active: false
+  salesperson_id: 1
+
+two:
+  contact: MyText
+  source: MyText
+  date: 2016-08-25
+  description: MyText
+  active: false
+  salesperson_id: 1
